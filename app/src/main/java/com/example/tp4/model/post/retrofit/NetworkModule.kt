@@ -1,4 +1,7 @@
-package com.example.tp4.model.post.retrofit
+package com.example.tp4.di
+
+import com.example.tp4.model.post.retrofit.ApiService
+import com.example.tp4.model.post.retrofit.RetrofitClient
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
