@@ -1,8 +1,7 @@
 package com.example.tp4
 
 import android.app.Application
-import com.example.tp4.model.post.retrofit.AppComponent
-import com.example.tp4.model.post.retrofit.DaggerAppComponent
+
 
 
 class App : Application() {
@@ -10,6 +9,10 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        appComponent = DaggerAppComponent.builder().build()
+        appComponent = DaggerAppComponent.builder()
+            .context(this)
+            .build()
     }
 }
+
+
